@@ -1,0 +1,2 @@
+module GhomesHelper
+end

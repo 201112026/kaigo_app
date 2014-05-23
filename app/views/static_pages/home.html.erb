@@ -1,13 +1,18 @@
 <div class="center hero-unit">
-  <h1>Welcome to the Kaigo App</h1>
+  <h1>Kaigo App </h1>
 
   <h2>
     This is the home page for the
     <a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
     kaigo application.
-  </h2>
+    <%= link_to "Sign up of user", signup_path, class: "btn btn-large btn-primary" %>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+
+  </h2>
+  
+  <%= link_to "Sign up of place", signup_path, class: "btn btn-large btn-primary" %>
+
+
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
