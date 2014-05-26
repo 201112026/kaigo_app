@@ -1,4 +1,5 @@
 KaigoApp::Application.routes.draw do
+  get "ghomess/new"
   get "ghomes/new"
   get "users/new"
   root  'static_pages#home'
