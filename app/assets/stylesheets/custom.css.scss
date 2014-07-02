@@ -51,6 +51,31 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+h4 {
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: brack;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 1;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -68,6 +93,22 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  line-height: 1;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#menu {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: normal;
   line-height: 1;
   &:hover {
     color: white;

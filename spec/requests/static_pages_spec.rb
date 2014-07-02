@@ -19,5 +19,11 @@ describe "Static pages" do
     it { should have_title(full_title('Help')) }
   end
 
+  describe "About page" do
+    before { visit about_path }
+
+    it { should have_content('About') }
+    it { should have_title(full_title('About')) }
+  end
 end
 
