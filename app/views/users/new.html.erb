@@ -6,10 +6,13 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
+      <%= f.label :shubetu, "種別" %>
+      <%= f.select :shubetu, [["利用者", "riyousha"], ["ケアマネージャー", "care_manager"],["施設", "sisetu"] ] %>
+
+      <%= f.label :name, "お名前" %>
       <%= f.text_field :name %>
 
-      <%= f.label :email %>
+      <%= f.label :email, "e-mail" %>
       <%= f.text_field :email %>
 
       <%= f.label :password %>
@@ -18,7 +21,7 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+      <%= f.submit "登録します", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
 </div>

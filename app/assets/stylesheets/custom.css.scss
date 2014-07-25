@@ -191,7 +191,7 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input, textarea, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
@@ -215,4 +215,20 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
+.select {
+  background: #FFFDF4;
+  border: 2px solid #D2BA85;
+  border-radius: 5px;
+  color: #0C2245;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 5px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
 

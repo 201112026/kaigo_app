@@ -4,7 +4,12 @@
     <section>
       <h1>
         <%= gravatar_for @user %>
-        <%= @user.name %>
+	種別:<br>
+	<%= @user.shubetu %><br>
+	お名前:<br>
+        <%= @user.name %><br>
+	email :<br>
+	<%= @user.email %>
       </h1>
     </section>
   </aside>
