@@ -7,7 +7,8 @@
       <%= render 'shared/error_messages' %>
 
       <%= f.label :shubetu, "種別" %>
-      <%= f.select :shubetu, [["利用者", "riyousha"], ["ケアマネージャー", "care_manager"],["施設", "sisetu"] ] %>
+      <%= f.select :shubetu, [["利用者", "riyousha"],
+                    ["ケアマネージャー", "care_manager"],["施設", "sisetu"] ] %>
 
       <%= f.label :name, "お名前" %>
       <%= f.text_field :name %>

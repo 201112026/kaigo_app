@@ -1,11 +1,23 @@
 <% provide(:title, @user.name) %>
+
+
+
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
         <%= gravatar_for @user %>
 	種別:<br>
-	<%= @user.shubetu %><br>
+
+	<%case @user.shubetu%>
+	 <%when "riyousha" then%>
+  	   利用者 <br>
+	 <%when "care_manager" then%>
+	   ケアマネ <br>
+	 <%when "sisetu" then%>
+	   施設 <br>
+	<%end%>
+
 	お名前:<br>
         <%= @user.name %><br>
 	email :<br>
