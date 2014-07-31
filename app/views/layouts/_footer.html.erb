@@ -1,4 +1,19 @@
 <footer class="footer">
-<%= :title %><br>
+
+<% case yield(:title) %>
+ <%when "About" then%>
+  概要
+ <%when "Help" then%>
+  質問
+ <%when "" then%>
+  トップ
+ <%when "Signup" then%>
+  登録
+ <%when "Signin" then%>
+  ログイン
+ <%else%>
+  ユーザー <%= @user.name %>
+<%end%>
+
 <li><%= link_to "ヘルプ",  help_path %></li>
 </footer>
