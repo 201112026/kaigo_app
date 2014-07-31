@@ -1,4 +1,5 @@
 <footer class="footer">
+<<<<<<< HEAD
 ページを表示<br>
 
 <%case yield(:title) %>
@@ -12,6 +13,22 @@
   トップ <br>
  <%else%>
   登録者 <%= @user.name %><br>
+=======
+
+<% case yield(:title) %>
+ <%when "About" then%>
+  概要
+ <%when "Help" then%>
+  質問
+ <%when "" then%>
+  トップ
+ <%when "Signup" then%>
+  登録
+ <%when "Signin" then%>
+  ログイン
+ <%else%>
+  ユーザー <%= @user.name %>
+>>>>>>> 0730
 <%end%>
 
 <li><%= link_to "ヘルプ",  help_path %></li>
