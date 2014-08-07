@@ -4,12 +4,11 @@
       <nav>
         <ul class="nav pull-right">
 	
-          <% if @user == nil then %>
-            <h3>ようこそ ゲスト さん</h3>
-          <% else %>
-	    <%case @user.shubetu%>
+          <% if signed_in? %>
+
+	    <%case @current_user.shubetu%>
 	      <%when "riyousha" then%>
-  	        <h3>ようこそ <%= @user.name%> さん</h3>
+  	        <h3>ようこそ <%= @current_user.name%> さん</h3>
 	      <%when "care_manager" then%>
 	        <h3>ようこそ ケアマネ さん</h3>
 	      <%when "sisetu" then%>
@@ -17,7 +16,10 @@
 	      <%else%>
 	        <h3>ようこそ ゲスト さん</h3>
 	    <%end%>
-	  <% end %>
+
+          <% else %>
+            <h3>ようこそ ゲスト さん</h3>
+          <% end %>
 
           <li><%= link_to "トップ",        root_path, id: "menu" %></li>
           <li><%= link_to "サイト概要", about_path, id: "menu" %></li>
