@@ -7,14 +7,14 @@
   質問
  <%when "" then%>
   トップ
- <%when "Signup" then%>
+ <%when "Sign up" then%>
   登録
- <%when "Signin" then%>
+ <%when "Sign in" then%>
   ログイン
  <%else%>
   ユーザー : <%= @user.name %>
 <%end%>
 
-
+<p><%= yield(:title) %></p>
 <li><%= link_to "ヘルプ",  help_path %></li>
 </footer>
