@@ -11,8 +11,10 @@
   登録
  <%when "Sign in" then%>
   ログイン
+ <%when "All users" then%>
+  全ユーザー
  <%else%>
-  ユーザー : <%= @user.name %>
+  ユーザー : <%= @current_user.name %>
 <%end%>
 
 <p><%= yield(:title) %></p>

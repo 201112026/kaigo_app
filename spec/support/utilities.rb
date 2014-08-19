@@ -1,3 +1,4 @@
+# encoding: utf-8
 def full_title(page_title)
   base_title = "Ruby on Rails Tutorial Kaigo App"
   if page_title.empty?
@@ -9,7 +10,7 @@ end
 
 def sign_in(user, options={})
   if options[:no_capybara]
-    # Capybara‚ğg—p‚µ‚Ä‚¢‚È‚¢ê‡‚É‚àƒTƒCƒ“ƒCƒ“‚·‚éB
+    # Capybaraã‚’ä½¿ç”¨ã—ã¦ã„ãªã„å ´åˆã«ã‚‚ã‚µã‚¤ãƒ³ã‚¤ãƒ³ã™ã‚‹ã€‚
     remember_token = User.new_remember_token
     cookies[:remember_token] = remember_token
     user.update_attribute(:remember_token, User.encrypt(remember_token))
@@ -17,7 +18,7 @@ def sign_in(user, options={})
     visit signin_path
     fill_in "Email",    with: user.email
     fill_in "Password", with: user.password
-    click_button "Sign in"
+    click_button "ã‚µã‚¤ãƒ³ã‚¤ãƒ³"
   end
 end
 
