@@ -14,7 +14,7 @@
  <%when "All users" then%>
   全ユーザー
  <%else%>
-  ユーザー : <%= @current_user.name %>
+  ユーザー : <%= @user.name %>
 <%end%>
 
 <p><%= yield(:title) %></p>

@@ -12,6 +12,12 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+
+  def index_sisetsu
+    @users = User.find_by(:shubetu => 'riyousha')
+  end
+
+
   def new
     @user = User.new
   end
